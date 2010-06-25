@@ -14,6 +14,5 @@ int main()
     printf("Second:%d\n",mylocaltime->tm_sec); 
     printf("Version: 0.02\n");
     printf("Hello world!\n"); 
-    return 0;
 }
 
