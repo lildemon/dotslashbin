@@ -1,0 +1,40 @@
+## Utility
+
+# Reload aliases
+alias reload='source ~/bin/dotfiles/bash/aliases'
+# Edit aliases
+alias ea='vim ~/bin/dotfiles/bash/aliases && reload'
+
+## Bash commands
+
+alias ls="ls -GF"
+alias lss="ls -GathorF"
+alias ll="ls -lah"
+
+alias cd..="cd .."
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+## Tree
+
+alias tree2="tree -L 2"
+alias tree3="tree -L 3"
+
+## Mercurial
+
+# edit patch series file
+alias hg-qedit='vim $(hg root)/.hg/patches/series'
+# modified and new file list with paths relative to current directory
+alias hg-st='hg status $(hg root) -n'
+# Delete all modified and new files (like update -C but also deletes new files)
+alias hg-clean='hg-st | xargs rm'
+# Log filtering to show only commits in current branch
+alias hg-logb='hg log -b $(hg branch)'
+# Maven 2
+# Execute maven without tests
+alias mvnnt='mvn -Dmaven.test.skip=true'
+
+# Mac OS X
+alias safari='open -a Safari'

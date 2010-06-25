@@ -1,0 +1,24 @@
+
+## Prompt
+
+source ~/bin/dotfiles/bash/promptcolors
+#which vcprompt > /dev/null 2>&1 && ps1_vcprompt='$(vcprompt -f %n:%r/%b%u%m)'
+#PS1="\n\[$CYAN\]\w \[$YELLOW\]$ps1_vcprompt\[$NO_COLOR\] \n\! ⌘  "
+
+## Key Bindings
+
+# bind Tab to autocomplete instead of listing
+bind '"\t":menu-complete'
+
+## History
+
+export HISTSIZE=2000
+shopt -s histappend
+
+# Do not overwrite files when redirecting output
+set -o noclobber
+
+# ver man pages de ls para la expliación de LSCOLORS
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
+
