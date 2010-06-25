@@ -2,6 +2,7 @@
 #include <time.h> 
 int main()
 {
+    int b;
     time_t mytime;
     struct tm *mylocaltime; 
     mytime=time(NULL);
